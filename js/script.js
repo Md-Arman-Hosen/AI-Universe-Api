@@ -23,9 +23,9 @@ const displayAi = (params, dataLimit) => {
             <div class="card-body">
             <h3>Features : </h3>
             <ol>
-                <li>${param?.features[0] ? param.features[0] : ''}</li>
-                <li>${param?.features[1] ? param.features[1] : ''}</li>
-                <li>${param?.features[2] ? param.features[2] : ''}</li>
+                <li>${param?.features[0] ? param.features[0] : 'null'}</li>
+                <li>${param?.features[1] ? param.features[1] : 'null'}</li>
+                <li>${param?.features[2] ? param.features[2] : 'null'}</li>
             </ol> 
             </div>
             <div class="card-footer">
@@ -90,40 +90,40 @@ const displayDataDetails = (param) => {
                 </div>
                 <div class="col bg-light rounded">
                     <p class="text-warning fw-bold p-5">
-                    ${param?.pricing[1].price ? param.pricing[1].price : ''}/
-                    ${param?.pricing[1].plan ? param.pricing[1].plan : ''}</p>
+                    ${param?.pricing[1].price ? param.pricing[1].price : 'null'}/
+                    ${param?.pricing[1].plan ? param.pricing[1].plan : 'null'}</p>
                 </div>
                 <div class="col bg-light rounded">
                     <p class="text-danger fw-bold p-5">
-                    ${param?.pricing[2].price ? param.pricing[2].price : ''}/
-                    ${param?.pricing[2].plan ? param.pricing[2].plan : ''}</p>
+                    ${param?.pricing[2].price ? param.pricing[2].price : 'null'}/
+                    ${param?.pricing[2].plan ? param.pricing[2].plan : 'null'}</p>
                 </div>
             </div>
         <div class="row d-flex g-3">
             <div class="col rounded">
                 <h3 class="fw-bold">Features</h3>
                 <ul>
-                    <li class ="text-secondary">${param?.features["1"].feature_name ? param.features["1"].feature_name : ''}</li>
-                    <li class ="text-secondary">${param?.features["2"].feature_name ? param.features["2"].feature_name : ''}</li>
-                    <li class ="text-secondary">${param?.features["3"].feature_name ? param.features["2"].feature_name : ''}</li>
+                    <li class ="text-secondary">${param?.features["1"].feature_name ? param.features["1"].feature_name : 'null'}</li>
+                    <li class ="text-secondary">${param?.features["2"].feature_name ? param.features["2"].feature_name : 'null'}</li>
+                    <li class ="text-secondary">${param?.features["3"].feature_name ? param.features["2"].feature_name : 'null'}</li>
                 </ul>
             </div>
             <div class="col rounded">
                 <h3 class="fw-bold">Integrations</h3>
                 <ul>
-                    <li class ="text-secondary">${param?.integrations[0] ? param.integrations[0] : ''}</li>
-                    <li class ="text-secondary">${param?.integrations[1] ? param.integrations[1] : ''}</li>
-                    <li class ="text-secondary">${param?.integrations[2] ? param.integrations[2] : ''}</li>
+                    <li class ="text-secondary">${param?.integrations[0] ? param.integrations[0] : 'null'}</li>
+                    <li class ="text-secondary">${param?.integrations[1] ? param.integrations[1] : 'null'}</li>
+                    <li class ="text-secondary">${param?.integrations[2] ? param.integrations[2] : 'null'}</li>
                 </ul>
             </div>
         </div>
     </div>
         <div>
             <img src="${param?.image_link[0] ? param.image_link[0] : ''}" class="mb-5 w-100" alt="">
-            <p class="btn btn-danger position-absolute top-0 end-0 m-4 d-none d-lg-block d-md-block">${param?.accuracy['score'] ? param.accuracy['score'] : ''}</p>
+            <p class="btn btn-danger position-absolute top-0 end-0 m-4 d-none d-lg-block d-md-block">${param?.accuracy['score'] ? param.accuracy['score'] : 'null'}</p>
             <div class="text-center">
-                <p class="fw-bold mb-2">${param?.input_output_examples[0].input ? param.input_output_examples[0].input : ''}</p>
-                <p class="text-secondary">${param?.input_output_examples[0].output ? param.input_output_examples[0].output : ''}</p>
+                <p class="fw-bold mb-2">${param?.input_output_examples[0].input ? param.input_output_examples[0].input : 'null'}</p>
+                <p class="text-secondary">${param?.input_output_examples[0].output ? param.input_output_examples[0].output : 'null'}</p>
             </div>
         </div>
     </div>
